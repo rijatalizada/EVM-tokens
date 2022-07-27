@@ -6,6 +6,7 @@ import getArbitrumTokens from "./getTokens/getArbitrumTokens";
 import getBinanceTokens from "./getTokens/getBinanceTokens";
 import getAvaxTokens from "./getTokens/getAvaxTokens";
 import getGnosisTokens from "./getTokens/getGnosisTokens";
+import getFantomTokens from "./getTokens/getFantomTokens";
 
 export const ethTokens = functions.https.onRequest(
   async (request, response) => {
@@ -45,6 +46,13 @@ export const binanceTokens = functions.https.onRequest(
 export const avaxTokens = functions.https.onRequest(
   async (request, response) => {
     const tokens = await getAvaxTokens();
+    response.send(tokens);
+  }
+);
+
+export const fantomTokens = functions.https.onRequest(
+  async (request, response) => {
+    const tokens = await getFantomTokens();
     response.send(tokens);
   }
 );

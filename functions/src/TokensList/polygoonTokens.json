@@ -10,6 +10,15 @@
     "listedIn": ["coingecko", "1inch", "sushiswap"]
   },
   {
+    "address": "0x0000000000000000000000000000000000001010",
+    "symbol": "MATIC",
+    "name": "Matic Network",
+    "decimals": 18,
+    "logoURI": "https://api.rubic.exchange/assets/polygon/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/logo.png",
+    "coingeckoId": "matic-network",
+    "listedIn": ["coingecko", "1inch", "sushiswap"]
+  },
+  {
     "address": "0xfe4546feFe124F30788c4Cc1BB9AA6907A7987F9",
     "symbol": "cxETH",
     "name": "CelsiusX Wrapped ETH",
